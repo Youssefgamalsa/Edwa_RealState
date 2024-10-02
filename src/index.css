@@ -23,5 +23,114 @@ table tbody tr td i {
   font-size: 23px;
 }
 .card h3 {
-  color:blueviolet;
+  color: blueviolet;
+}
+.form {
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  .form {
+    width: 100%;
+  }
+}
+.cards {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 20px;
+}
+.buy {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  background: rgb(86, 208, 86);
+  padding: 8px 18px;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.fav {
+  position: absolute;
+  padding: 10px;
+  top: 15px;
+  left: 10px;
+  color: #ffffffd5;
+  font-size: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.cardDetails {
+  width: 85%;
+  margin: auto;
+  text-align: right;
+  direction: rtl;
+}
+.caro {
+  width: 50%;
+  height: 400px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .caro {
+    width: 100%;
+  }
+  .Facilities{
+      grid-template-columns: 100%;
+  }
+}
+.caro img {
+  height: 400px;
+}
+.details {
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+}
+/* .text {
+  flex: 1;
+}
+.person {
+  flex: 1;
+} */
+.buying {
+  display: flex;
+  gap: 40px;
+  margin: 20px 0px;
+  align-items: center;
+}
+.buying button {
+  border: none;
+  background: transparent;
+  padding: 6px 12px;
+  color: rgb(69, 39, 239);
+  border: 1px solid rgb(69, 39, 239);
+  border-radius: 5px;
+}
+.Facilities{
+  display: grid;
+  grid-template-columns: 50%;
+}
+.Facilities h3{
+  color:rgba(12, 169, 169, 0.633)
+}
+.buy {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  background: rgb(86, 208, 86);
+  padding: 8px 18px;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.up{
+  text-align: center;
+}
+.up div div{
+  text-align: left;
+}
+.up_container{
+  background: linear-gradient(45deg, rgba(47, 140, 96, 0.63) -22.39%, rgba(0, 0, 0, 0.6237) 61.76%);
 }

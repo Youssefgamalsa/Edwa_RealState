@@ -3,6 +3,8 @@ import Home from "./modules/Shared Components/Home/Home"
 import { ToastContainer } from 'react-toastify';
 import MasterLayout from './modules/Shared Components/MasterLayout/MasterLayout';
 import Card from "./modules/Card/Card"
+import Login from './modules/Auth/Login/Login';
+import CardDetails from './modules/Card/CardDetails';
 function App() {
   const routes = createBrowserRouter([
     {
@@ -10,8 +12,10 @@ function App() {
       element: < MasterLayout/>,
       // errorElement: <NotFound />,
       children: [
-        { index: true, element: <Home /> },
-        {path:"card", element:<Card/>}
+        {index: true, element: <Home /> },
+        {path:"card", element:<Card/>},
+        {path:"login", element:<Login/>},
+        {path:"card-details", element:<CardDetails/>}
       ],
     },
   ]);
