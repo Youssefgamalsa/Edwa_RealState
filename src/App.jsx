@@ -5,6 +5,7 @@ import MasterLayout from './modules/Shared Components/MasterLayout/MasterLayout'
 import Card from "./modules/Card/Card"
 import Login from './modules/Auth/Login/Login';
 import CardDetails from './modules/Card/CardDetails';
+import PartmentData from './modules/Shared Components/Partment/PartmentData';
 function App() {
   const routes = createBrowserRouter([
     {
@@ -15,7 +16,8 @@ function App() {
         {index: true, element: <Home /> },
         {path:"card", element:<Card/>},
         {path:"login", element:<Login/>},
-        {path:"card-details", element:<CardDetails/>}
+        {path:"card-details", element:<CardDetails/>},
+        {path:"partment-data",element:<PartmentData/>}
       ],
     },
   ]);

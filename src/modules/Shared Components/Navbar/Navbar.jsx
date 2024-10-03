@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -20,7 +20,7 @@ import { Link, useNavigate } from "react-router-dom"; // استيراد Link م�
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const nav = useNavigate();
-  const toggleDrawer = (open) => (event ) => {
+  const toggleDrawer = (open) => (event) => {
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
@@ -40,12 +40,14 @@ export default function Navbar() {
       <List>
         {[
           { text: "Home", link: "/" },
-          { text: "Card", link: "/Card" },
-          { text: "Send email", link: "/send-email" },
-          { text: "Drafts", link: "/drafts" }
+          { text: "شقق", link: "/شقق" },
+          { text: "مبانى سكنيه ", link: "/" },
+          { text: "اراضى مبانى ", link: "/" },
+          { text: "اراضى زراعيه ", link: "/" },
         ].map((item, index) => (
           <ListItem key={item.text} disablePadding>
-            <ListItemButton component={Link} to={item.link}> {/* استخدام Link */}
+            <ListItemButton component={Link} to={item.link}>
+              {/* استخدام Link */}
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
@@ -57,12 +59,15 @@ export default function Navbar() {
       <Divider />
       <List>
         {[
-          { text: "All mail", link: "/all-mail" },
-          { text: "Trash", link: "/trash" },
-          { text: "Spam", link: "/spam" }
+          { text: " عرض شقه", link: "/partment-data" },
+          { text: "عرض ارض زراعيه ", link: "/" },
+          { text: "عرض ارض مبانى ", link: "/" },
+          { text: "عرض  مبنى سكنى ", link: "/" },
         ].map((item, index) => (
           <ListItem key={item.text} disablePadding>
-            <ListItemButton component={Link} to={item.link}> {/* استخدام Link */}
+            <ListItemButton component={Link} to={item.link}>
+              {" "}
+              {/* استخدام Link */}
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
@@ -96,7 +101,11 @@ export default function Navbar() {
           >
             News
           </Typography>
-          <Button variant="contained" sx={{ backgroundColor: "#000" }} onClick={()=>nav('/login')}>
+          <Button
+            variant="contained"
+            sx={{ backgroundColor: "#000" }}
+            onClick={() => nav("/login")}
+          >
             Login
           </Button>
         </Toolbar>

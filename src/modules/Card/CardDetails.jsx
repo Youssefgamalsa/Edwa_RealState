@@ -98,14 +98,14 @@ export default function CardDetails() {
                     <td>
                       <i className="fa-solid fa-city mx-2"></i>
                     </td>
-                    <td>عدد الطابق</td>
+                    <td> الطابق</td>
                     <td> 9 </td>
                   </tr>
                   <tr>
                     <td>
                       <i className="fa-solid fa-city mx-2"></i>
                     </td>
-                    <td>عدد الطابق</td>
+                    <td> يوجد مصعد </td>
                   </tr>
                 </tbody>
               </table>

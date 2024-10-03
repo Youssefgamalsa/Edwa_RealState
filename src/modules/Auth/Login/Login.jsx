@@ -71,7 +71,11 @@ export default function Login() {
                         id="selectedImage"
                         src={prifile_img}
                         alt="example placeholder"
-                        style={{ width: "100px", margin: "auto" }}
+                        style={{
+                          width: "100px",
+                          margin: "auto",
+                          cursor: "pointer",
+                        }}
                       />
                     </label>
                     <input
