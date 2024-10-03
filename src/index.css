@@ -134,3 +134,9 @@ table tbody tr td i {
 .up_container{
   background: linear-gradient(45deg, rgba(47, 140, 96, 0.63) -22.39%, rgba(0, 0, 0, 0.6237) 61.76%);
 }
+.textarea::placeholder{
+color: #847373;
+}
+textarea{
+  resize: none;
+}
