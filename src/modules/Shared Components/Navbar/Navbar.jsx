@@ -60,8 +60,7 @@ export default function Navbar() {
       <List>
         {[
           { text: " عرض شقه", link: "/partment-data" },
-          { text: "عرض ارض زراعيه ", link: "/" },
-          { text: "عرض ارض مبانى ", link: "/" },
+          { text: " عرض ارض زراعيه او مبانى  ", link: "/LandData" },
           { text: "عرض  مبنى سكنى ", link: "/" },
         ].map((item, index) => (
           <ListItem key={item.text} disablePadding>
