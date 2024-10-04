@@ -197,7 +197,7 @@ export default function PartmentData() {
               />
             </div>
             <div className="w-50 mx-3 mb-3">
-              <InputLabel id="Elevator"> يوجد مصعد  </InputLabel>
+              <InputLabel id="Elevator"> يوجد مصعد </InputLabel>
               <Select
                 labelId="Elevator"
                 id="demo-simple-select"
@@ -212,7 +212,10 @@ export default function PartmentData() {
             </div>
           </div>
 
-          <div className="btns mt-5" style={{ textAlign: "center" }}>
+          <div
+            className="btns mt-5"
+            style={{ textAlign: "center", display: "flex" }}
+          >
             <Button
               variant="outlined"
               className="mx-3"
