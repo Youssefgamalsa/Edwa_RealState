@@ -41,7 +41,7 @@ export default function Navbar() {
         {[
           { text: "Home", link: "/" },
           { text: "شقق", link: "/شقق" },
-          { text: "مبانى سكنيه ", link: "/" },
+          { text: "مبانى سكنيه ", link: "/Apartment_building_list" },
           { text: "اراضى مبانى ", link: "/" },
           { text: "اراضى زراعيه ", link: "/" },
         ].map((item, index) => (
@@ -61,7 +61,7 @@ export default function Navbar() {
         {[
           { text: " عرض شقه", link: "/partment-data" },
           { text: " عرض ارض زراعيه او مبانى  ", link: "/LandData" },
-          { text: "عرض  مبنى سكنى ", link: "/" },
+          { text: "عرض  مبنى سكنى ", link: "/Apartment_building_Data" },
         ].map((item, index) => (
           <ListItem key={item.text} disablePadding>
             <ListItemButton component={Link} to={item.link}>

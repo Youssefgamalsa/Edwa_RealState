@@ -1,15 +1,9 @@
-// import { useState } from "react";
 import { Button, TextField, Typography } from "@mui/material";
-import prifile_img from "../../../../assets/images.png";
+import prifile_img from "../../../assets/images.png";
 import CreateIcon from "@mui/icons-material/Create";
 import CloseIcon from "@mui/icons-material/Close";
 
-export default function LandData() {
-  // const [age, setAge] = useState("");
-  // const handleChange = (event) => {
-  //   setAge(event.target.value);
-  // };
-
+export default function Apartment_building_Data() {
   const displaySelectedImage = (e) => {
     console.log(e.target.value);
   };
@@ -23,47 +17,12 @@ export default function LandData() {
         direction: "rtl",
       }}
     >
-      <h3 className="text-muted text-center"> Create a plot of land </h3>
+      <h3 className="text-muted text-center">انشاء مبنى سكنى </h3>
       <div className="row">
         <form className="shadow col-lg-9 m-auto p-4">
           <Typography variant="h3" className="my-2">
-            اراضى
+            مبنى سكنى
           </Typography>
-          <div className="form-group mb-1">
-            <input
-              className="form-check-input mx-3 p-2"
-              type="radio"
-              name="اراضى"
-              id="مبانى"
-              
-            />
-            <label className="form-check-label" htmlFor="مبانى">
-              Building land
-            </label>
-          </div>
-          <div className="form-group mb-1">
-            <input
-              className="form-check-input mx-3 p-2"
-              type="radio"
-              name="اراضى"
-              id="زراعيه"
-            />
-            <label className="form-check-label" htmlFor="زراعيه">
-              Agricultural land
-            </label>
-          </div>
-          <div className="form-group mb-1">
-            <input
-              className="form-check-input mx-3 p-2 "
-              type="radio"
-              name="اراضى"
-              id="mix"
-            />
-            <label className="form-check-label" htmlFor="mix">
-              Agricultural targeted to be buildings
-            </label>
-          </div>
-
           <div className="form-group mb-3">
             <label htmlFor="price" className="text-danger my-2 ">
               * السعر بالجنية
@@ -106,14 +65,14 @@ export default function LandData() {
           </div>
           <div className="form-group mb-3">
             <label htmlFor="description" className="text-danger mb-2">
-              * اضافه وصف لقطعه الارض
+              * اضافه وصف للمبنى السكنى
             </label>
             <textarea
               className="form-control textarea"
               id="description"
               rows="5"
               style={{ backgroundColor: "#87a1ff46" }}
-              placeholder="مثال ( قطعه ارض مساحته 220متر شارع بورسعيد بجوار سوبرماركت .....مربعه الشكل واجهه 12 متر  بحرى   )"
+              placeholder="مثال (مبنى سكنى ممكون من دورين تشطيب كامل كل دور مكون من ثلاثه غرف رءيسيه + حمام + مطبخ  + الواجهه 10 متر  + الشارع 8متر   )"
             ></textarea>
           </div>
           <div
@@ -142,7 +101,27 @@ export default function LandData() {
               </div>
             </div>
           </div>
-
+          <div className="w-100 my-3">
+            <label htmlFor="price" className="text-danger my-2">
+              عدد الادوار
+            </label>
+            <input
+              type="number"
+              className="form-control w-100  "
+              placeholder="عدد الادوار  "
+            />
+          </div>
+          <div className="w-100 my-3 ">
+            <label htmlFor="door" className="text-danger my-2 ">
+              عدد الغرف الرءيسيه
+            </label>
+            <input
+              type="number"
+              id="door"
+              className="form-control w-100 "
+              placeholder=" عدد  الغرف الرءيسيه"
+            />
+          </div>
           <div
             className="btns mt-5"
             style={{ textAlign: "center", display: "flex" }}

@@ -136,6 +136,7 @@ export default function PartmentData() {
             {" "}
             المرافق{" "}
           </Typography>
+          
           <div className="d-flex mb-3 flex-wrap  ">
             <div className="w-50 mx-3 ">
               <label htmlFor="door" className="text-danger my-2 ">
