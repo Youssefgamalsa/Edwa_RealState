@@ -7,7 +7,7 @@
 // import { useContext, useEffect, useState } from "react";
 // import { Authcontext } from "../../../../Context/Authcontext";
 // import { UserUrls } from "../../../../BaseUrls/BaseUrls";
-import prifile_img from "../../../assets/1.png";
+// import prifile_img from "../../../assets/1.png";
 import logo from "../../../assets/logo.png";
 import { useForm } from "react-hook-form";
 // import { useState } from "react";
@@ -40,9 +40,9 @@ export default function Login() {
   //     navigate("/login");
   //   }
   // });
-  const displaySelectedImage = (e) => {
-    console.log(e.target.value);
-  };
+  // const displaySelectedImage = (e) => {
+  //   console.log(e.target.value);
+  // };
 
   return (
     <>
@@ -57,36 +57,6 @@ export default function Login() {
               </span>
             </div>
             <form className="p-1">
-              <div
-                className="input-group flex-nowrap my-3"
-                style={{ width: "30%", margin: "auto" }}
-              >
-                <div>
-                  <div data-mdb-ripple-init>
-                    <label
-                      className="form-label text-white m-1"
-                      htmlFor="customFile1"
-                    >
-                      <img
-                        id="selectedImage"
-                        src={prifile_img}
-                        alt="example placeholder"
-                        style={{
-                          width: "100px",
-                          margin: "auto",
-                          cursor: "pointer",
-                        }}
-                      />
-                    </label>
-                    <input
-                      type="file"
-                      className="form-control d-none"
-                      id="customFile1"
-                      onChange={displaySelectedImage}
-                    />
-                  </div>
-                </div>
-              </div>
               <div className="input-group flex-nowrap my-3">
                 <span className="input-group-text" id="addon-wrapping">
                   <i className="fa-solid fa-signature"></i>
@@ -133,6 +103,18 @@ export default function Login() {
                   {errors.password.message}
                 </p>
               )}
+
+              <div className="mb-3">
+                <label htmlFor="formFile" className="form-label text-danger ">
+                  Profile Image
+                </label>
+                <input
+                  className="form-control"
+                  type="file"
+                  id="formFile"
+                  required
+                />
+              </div>
               <button
                 type="submit"
                 className="btn btn-success d-block w-100 my-3 p-2"
